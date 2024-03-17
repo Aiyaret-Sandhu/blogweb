@@ -67,7 +67,7 @@ const PostPage = () => {
   return (
     <>
       <Navbar />
-      <div className="container m-auto bg-gray-100 py-4 w-[50%] md:w-full mt-24">
+      <div className="container m-auto bg-gray-100 py-4 w-[50%] md:w-full mt-24 rounded-sm">
         <div className="mb-3">
           <h2 className="text-2xl font-medium text-gray-800">
             Create your post
@@ -89,7 +89,7 @@ const PostPage = () => {
               name="image"
               style={{ display: "none" }}
               onChange={handleImage}
-              className="bg-black w-10 h-10 text-white flex items-center justify-center"
+              className="bg-black w-10 h-10 text-white flex items-center justify-center rounded-sm"
             />
             <label
               htmlFor="fileInput"
@@ -102,7 +102,7 @@ const PostPage = () => {
             <p className=" text-lg font-medium text-gray-800">Title</p>
             <input
               placeholder="Post title..."
-              className="w-full p-2 bg-white"
+              className="w-full p-2 bg-white rounded-sm"
               type="text"
               onChange={(e) => setTitle(e.target.value)}
               required
@@ -112,7 +112,7 @@ const PostPage = () => {
             <p className=" text-lg font-medium text-gray-800">Details</p>
             <textarea
               placeholder="Post details..."
-              className="w-full p-2 bg-white "
+              className="w-full p-2 bg-white rounded-sm"
               rows={3}
               type="text"
               onChange={(e) => setDesc(e.target.value)}
@@ -127,8 +127,8 @@ const PostPage = () => {
               className={`${
                 isLoading
                   ? "bg-[rgba(0,0,0,0.5)] cursor-not-allowed"
-                  : "bg-gray-800 cursor-pointer"
-              } w-full text-white p-2 font-medium `}
+                  : "bg-gray-900 cursor-pointer"
+              } w-full text-white p-2 font-medium rounded-sm `}
               disabled={isLoading} // Disable the button when loading is true
             >
               {isLoading ? "Uploading..." : "Upload Post"}{" "}

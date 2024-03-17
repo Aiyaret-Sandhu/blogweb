@@ -25,7 +25,8 @@ const HomePage = () => {
     fetchPosts()
   }, [search, searchQuery]);
 
-  const filteredPosts = posts.filter(post => post.title.toLowerCase().includes(searchQuery.toLowerCase()))
+  const filterPosts = posts.filter(post => post.title.toLowerCase().includes(searchQuery.toLowerCase()))
+  const filteredPosts = filterPosts.slice(0, 6);
 
   return (
     <>

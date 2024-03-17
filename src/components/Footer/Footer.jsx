@@ -5,10 +5,12 @@ import { FaInstagramSquare, FaShareSquare } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className=" w-full flex m-auto bg-black text-white min-h-[200px] p-3 mt-12">
+    <div className=" w-full flex m-auto text-white min-h-[200px] p-4 mt-12"  style={{
+      backgroundColor: "rgba(0,20,0,0.9)"
+    }}>
       <div className="container m-auto grid grid-cols-3 md:grid-cols-1 md:space-y-8">
       <div className=" space-y-2">
-            <h2 className=" text-xl font-medium"> Quick Links</h2>
+            <h2 className=" text-2xl font-medium"> Quick Links </h2>
             <div className=" flex items-center gap-3">
               <AiFillHome size={20} />
               <p>Home</p>
@@ -23,21 +25,21 @@ const Footer = () => {
             </div>
           </div>
         <div className=" flex items-center md:items-start  justify-center  flex-col gap-3 space-y-2">
-          <h2 className=" text-xl font-medium"> Subscribe</h2>
+          <h2 className=" text-2xl font-medium"> Subscribe</h2>
           <div className=" flex flex-row justify-center md:justify-start gap-2 w-full">
             <input
               placeholder="Your email "
-              className=" w-[70%] p-1 px-2 text-black"
+              className=" w-[70%] p-1 px-2 text-black rounded-sm"
               type="email"
             />
-            <button className=" border p-2">
+            <button className=" border p-2 rounded-sm">
               <BsSendFill />
             </button>
           </div>
         </div>
         <div className=" flex items-center md:items-start  flex-col gap-3">
           <div className=" space-y-2">
-            <h2 className=" text-xl font-medium"> Socials</h2>
+            <h2 className=" text-2xl font-medium"> Socials</h2>
             <div className=" flex items-center gap-3">
               <AiFillFacebook size={24} />
               <p>Facebook</p>

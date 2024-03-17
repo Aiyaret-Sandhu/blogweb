@@ -44,13 +44,13 @@ const UserProfile = () => {
   return (
     <>
       <Navbar />
-      <div className="w-full min-h-[80vh]">
+      <div className="w-full min-h-[53vh]">
         <div className="container m-auto border py-4 w-[50%] md:w-[95%] mt-24 shadow-md">
           <div className="flex flex-col gap-5">
             <div className="flex items-center justify-between">
               <h2 className="text-2xl font-semibold"> Hi, There! </h2>
 
-              {editable ? (
+              {/* {editable ? (
                 <GrCheckmark
                   onClick={handleUpdate}
                   title="Done"
@@ -62,7 +62,7 @@ const UserProfile = () => {
                   title="edit profile "
                   className="cursor-pointer"
                 />
-              )}
+              )} */}
             </div>
             <div className="h-[140px] flex md:flex-col gap-6 w-full">
               <div className="relative w-[110px] min-h-[110px]">
@@ -76,11 +76,12 @@ const UserProfile = () => {
                       : "https://img.icons8.com/color/96/null/circled-user-male-skin-type-7--v1.png"
                   }`}
                 />
-                <input
+                <br />
+                {/* <input
                   type="file"
                   name="pic"
                   onChange={(e) => setPic(e.target.files[0])}
-                />
+                /> */}
                 <button
                   title="update image"
                   className={`${editable ? "block" : "hidden"} absolute bottom-0 right-0`}

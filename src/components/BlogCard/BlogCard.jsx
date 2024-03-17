@@ -15,19 +15,23 @@ const BlogCard = ({ post, copyPostLink }) => {
               alt=""
             />)}
           </Link>
-          <div className=" h-[230px] px-3 space-y-1 py-2 bg-white overflow-hidden">
+          <div className=" h-[230px] px-3 space-y-1 py-2 px-6 bg-white overflow-hidden">
             <div className=" flex justify-between ">
             <h2 className=" text-lg font-semibold overflow-hidden text-ellipsis whitespace-nowrap text-gray-800">
               {" "}
               {post.title}{" "}
             </h2>
-            <button className=" text-sm flex items-center justify-center space-x-2 text-gray-800" onClick={() => copyPostLink(post._id)}>  <span className="text-gray-800 ">Share</span>
-            <CiShare2/></button>
+            <button className=" text-md flex items-center justify-center space-x-2 text-gray-800" onClick={() => copyPostLink(post._id)}>  <span className="text-gray-800 ">Share</span>
+            <CiShare2 className="text-xl"/></button>
             </div>
+            <hr />
+            
             {post.categories.map((cat)=>(
               <span className="hidden">{cat.name}</span>
             ))}
-            <div className=" flex text-sm font-medium items-center justify-between">
+            <div className=" flex text-sm font-medium items-center justify-between" style={{
+              marginTop : "0.8rem"
+            }}>
               <div className=" flex items-center space-x-2">
                 <img
                 loading="lazy"

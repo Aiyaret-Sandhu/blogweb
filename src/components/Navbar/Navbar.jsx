@@ -27,24 +27,29 @@ const Navbar = ({ handleSearch }) => {
 
   return (
     <>
-      <div className=" fixed top-0 backdrop-blur-xl w-full  m-auto shadow-sm z-10">
+      <div className=" fixed top-0 w-full m-auto shadow-sm z-10" style={{
+        backgroundColor: "rgba(240,240,240,0.9)",
+        boxShadow: "0px 4px 4px -5px rgba(0,0,0,0.6)"
+      }} >
         <div className="container m-auto h-[75px] md:h-[65px] flex items-center py-1">
           <div className="left flex-1 w-full flex items-center justify-start">
             <div className=" w-full h-[60px] overflow-hidden flex items-center justify-start">
-              <Link to="/" className=" flex gap-2 items-center">
-                {/* <img
-                  className=" w-[70px] h-[70px] object-contain"
-                  src={BlogLogo}
-                  alt="logo"
-                /> */}
-
+              <Link to="/" className=" flex items-center">
                 <SiBloglovin className="text-2xl md:text-xl text-gray-800" />
-                <p className="logo font-bold text-3xl md:hidden text-gray-800">log.</p>
+                  <p className="logo font-bold text-4xl md:hidden text-green-900 -mr-5">Groco </p>
+                  
+                  <img
+                    className=" w-[140px] h-[140px] object-contain"
+                    src={BlogLogo}
+                    alt="logo"
+                  />
+
+                
               </Link>
             </div>
           </div>
           <div className="center flex-[5] w-full flex items-center justify-center px-1">
-            <div className=" w-[50%] md:w-full flex items-center p-1 px-2 gap-1 border border-gray-800 rounded-md">
+            <div className=" w-[60%] md:w-full flex items-center p-2 px-4 gap-2 border border-gray-400 rounded-sm">
               <BiSearch className=" text-2xl text-gray-800" />
               <input
                 className=" w-full bg-transparent placeholder:text-gray-700 h-full text-black "
@@ -114,11 +119,15 @@ const Navbar = ({ handleSearch }) => {
                   </div>
                 ) : (
                   <Link
-                    className=" p-2 font-semibold"
+                    className=" p-2 font-semibold text-xl flex gap-3"
                     title="login"
                     to="/login"
                   >
-                    Login
+                    <img src="https://cdn-icons-png.flaticon.com/128/1077/1077114.png" alt="profile logo" style={{
+                      width: "1.8rem",
+                      height: "1.8rem"
+                    }}/>
+                    <p>Login</p>
                   </Link>
                 )}
               </div>

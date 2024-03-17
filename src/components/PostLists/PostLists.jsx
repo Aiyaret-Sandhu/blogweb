@@ -19,9 +19,10 @@ const PostLists = ({ posts }) => {
   };
 
   return (
-    <div className="container m-auto w-[90%] lg:w-full mt-20">
+    <div className="container m-auto w-[100%] lg:w-full mt-20">
       <div>
-        <h3 className="text-[1.4rem] font-semibold uppercase text-gray-800">All Posts</h3>
+        <h3 className="text-[2rem] font-semibold uppercase text-green-900">🖊️ All Posts</h3>
+        <hr />
 
         <div className="mt-5 w-full flex gap-5 md:flex-col-reverse">
         <div className="flex-[8] grid grid-cols-3 md:grid-cols-1 lg:grid-cols-2 gap-8 px-3 md:p-0 border-r-2 md:border-r-0 border-gray-200">
@@ -50,24 +51,26 @@ const PostLists = ({ posts }) => {
           </div>
 
           <div className=" flex-[2] flex flex-col gap-5 p-3 bg-gray-50  md:hidden">
-            <div className=" space-y-3 md:hidden">
+            <div className=" space-y-4 md:hidden">
               <h3 className=" uppercase text-center text-xl font-semibold text-gray-800">
                 About us
               </h3>
+              <hr />
               <img
               loading="lazy"
                 className=" w-fit object-cover"
-                src="https://cdn.pixabay.com/photo/2015/09/04/23/28/wordpress-923188_960_720.jpg"
+                src="https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""
               />
-              <p className=" text-justify text-gray-700">
-              Welcome to our blog! Here you'll find a collection of informative articles, engaging stories, and expert insights on a wide range of topics. Explore our content and join the conversation as we share knowledge, inspiration, and practical advice. Get ready to be inspired, informed, and entertained!
+              <p className=" text-justify text-gray-700">              
+                Welcome to The GroC\co Blog, your ultimate destination for fresh ideas and food inspiration. From seasonal produce highlights to expert cooking tips and diverse recipe roundups, we've got everything you need to elevate your culinary experience. Whether you're a novice cook or a seasoned chef, our blog offers something for everyone, including health and wellness tips, community stories, and seasonal specials. Join us as we explore the world of food together and unleash your creativity in the kitchen!
               </p>
             </div>
             <div className=" space-y-3 md:hidden">
               <h3 className=" uppercase text-center text-xl font-semibold text-gray-800">
                 follow us
               </h3>
+              <hr />
               <div className=" flex items-center justify-center gap-3">
                 <AiFillFacebook size={25} />
                 <AiFillTwitterSquare size={25} />

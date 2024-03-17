@@ -4,10 +4,9 @@ import { Link } from "react-router-dom";
 import LazyLoad from "react-lazy-load";
 
 const imgs = [
-  "https://ik.imagekit.io/imgkitt/lukas-blazek-GnvurwJsKaY-unsplash%20(2).jpg?updatedAt=1693388077367",
-  "https://ik.imagekit.io/imgkitt/pexels-burst-373892.jpg?updatedAt=1693387983093",
-  "https://ik.imagekit.io/imgkitt/pexels-kaboompics-com-6469.jpg?updatedAt=1693387983553",
-  "https://ik.imagekit.io/imgkitt/pexels-markus-winkler-4057660.jpg?updatedAt=1693387982859",
+  "https://images.unsplash.com/photo-1520121401995-928cd50d4e27?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "https://images.unsplash.com/photo-1613408181923-f058a1b0e00c?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "https://images.unsplash.com/photo-1493815793585-d94ccbc86df8?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 ];
 
 const Hero = () => {
@@ -36,7 +35,9 @@ const Hero = () => {
         />
       </LazyLoad>
       <div className="w-[90%] flex gap-5 flex-col items-center justify-center absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] text-[#202020] text-center ">
-        <div className="flex gap-5 flex-col items-center justify-center backdrop-blur-md h-full border-2 border-white rounded-xl px-2 py-8">
+        <div className="flex gap-5 flex-col items-center justify-center h-full border-1 border-white rounded-md px-2 py-8" style={{
+          backgroundColor: "rgba(0,20,0,0.9)"
+        }}>
           <div>
             {authDetails && (
               <h2 className=" text-white font-semibold text-3xl">
@@ -45,7 +46,7 @@ const Hero = () => {
             )}
 
             <h2 className="text-6xl md:text-4xl font-semibold text-white">
-              Welcome To Blog
+              🌟 Welcome To Groco Blog !
             </h2>
           </div>
 

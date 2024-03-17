@@ -158,7 +158,7 @@ const DetailsPage = () => {
                     />
                   ) : (
                     <div className=" space-y-2 flex flex-col justify-between w-full">
-                      <h2 className="text-2xl text-gray-800 md:text-[1.35rem] font-medium">
+                      <h2 className="text-2xl text-gray-800 md:text-[1.35rem] capitalize font-medium">
                         {title}
                       </h2>
 
@@ -212,6 +212,7 @@ const DetailsPage = () => {
                     </div>
                   )}
                 </div>
+                <hr />
                 <div className="flex items-center justify-between">
                   <div className=" flex items-center gap-2">
                     <img
@@ -260,45 +261,44 @@ const DetailsPage = () => {
                   </button>
                 )}
               </div>
-              <div className=" w-full flex flex-col gap-3 mt-16 bg-gray-100 p-3">
+              <div className=" w-full flex flex-col gap-3 mt-16 bg-gray-100 p-4 px-12 rounded-md">
                 {/* comment input */}
                 <h2 className=" text-xl font-medium text-gray-800"> Comment</h2>
-                <div className="  flex items-center">
+                <div className="  flex items-center gap-4">
                   <input
                     placeholder="Write comment ..."
-                    className=" w-full p-2"
+                    className=" w-full p-2 rounded-sm"
                     type="text"
                   />
-                  <button className=" border border-white p-2">
+                  <button className=" border border-white rounded-sm p-2 bg-white">
                     <BsSendFill size={20} />
                   </button>
                 </div>
               </div>
             </div>
 
-            <div className=" flex-[2] flex flex-col gap-5 p-3 bg-gray-50  md:hidden">
+            <div className=" flex-[2] flex flex-col gap-5 p-6 bg-gray-50 rounded-md md:hidden">
               <div className=" space-y-3 md:hidden">
-                <h3 className=" uppercase text-center text-xl font-semibold text-gray-800">
+                <h3 className=" uppercase text-center text-2xl font-semibold text-gray-900">
                   About us
                 </h3>
+                <hr />
                 <img
                 loading="lazy"
-                  className=" w-fit object-cover"
-                  src="https://cdn.pixabay.com/photo/2015/09/04/23/28/wordpress-923188_960_720.jpg"
+                  className=" w-fit object-coverrounded-sm "
+                  src="https://images.unsplash.com/photo-1487611459768-bd414656ea10?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt=""
                 />
-                <p className=" text-justify text-gray-700">
-                  Welcome to our blog! Here you'll find a collection of
-                  informative articles, engaging stories, and expert insights on
-                  a wide range of topics. Explore our content and join the
-                  conversation as we share knowledge, inspiration, and practical
-                  advice. Get ready to be inspired, informed, and entertained!
+                <p className=" text-justify text-gray-700 text-sm">
+                  Welcome to The Groco Blog, your ultimate destination for fresh ideas and food inspiration. From seasonal produce highlights to expert cooking tips and diverse recipe roundups, we've got everything you need to elevate your culinary experience. Whether you're a novice cook or a seasoned chef, our blog offers something for everyone, including health and wellness tips, community stories, and seasonal specials. Join us as we explore the world of food together and unleash your creativity in the kitchen!
                 </p>
               </div>
+              <br />
               <div className=" space-y-3 md:hidden">
-                <h3 className=" uppercase text-center text-xl font-semibold text-gray-800">
+                <h3 className=" uppercase text-center text-lg font-semibold text-gray-800">
                   follow us
                 </h3>
+                <hr />
                 <div className=" flex items-center justify-center gap-3">
                   <AiFillFacebook size={25} />
                   <AiFillTwitterSquare size={25} />

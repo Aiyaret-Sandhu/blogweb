@@ -63,7 +63,7 @@ const PostLists = ({ posts }) => {
                 alt=""
               />
               <p className=" text-justify text-gray-700">              
-                Welcome to The GroC\co Blog, your ultimate destination for fresh ideas and food inspiration. From seasonal produce highlights to expert cooking tips and diverse recipe roundups, we've got everything you need to elevate your culinary experience. Whether you're a novice cook or a seasoned chef, our blog offers something for everyone, including health and wellness tips, community stories, and seasonal specials. Join us as we explore the world of food together and unleash your creativity in the kitchen!
+                Welcome to The Groco Blog, your ultimate destination for fresh ideas and food inspiration. From seasonal produce highlights to expert cooking tips and diverse recipe roundups, we've got everything you need to elevate your culinary experience. Whether you're a novice cook or a seasoned chef, our blog offers something for everyone, including health and wellness tips, community stories, and seasonal specials. Join us as we explore the world of food together and unleash your creativity in the kitchen!
               </p>
             </div>
             <div className=" space-y-3 md:hidden">
